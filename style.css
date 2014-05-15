@@ -11,3 +11,8 @@ Text Domain: Product Grid
 
 This theme, like WordPress, is licensed under the GPL.
 */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
