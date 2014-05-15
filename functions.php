@@ -19,8 +19,9 @@ function theme_js() {
   $wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
   $wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
   
+  wp_enqueue_script( 'bootstrap_js',  );
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_js' );
+add_action( 'wp_enqueue_scripts', 'theme_js'get_template_directory_uri() . 'bootstrap.min.js', array('jquery') );
 
 ?>
