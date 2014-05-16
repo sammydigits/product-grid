@@ -16,3 +16,6 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+.admin_bar .fixed-nav-top {
+  margin-top: 30px;
+}
