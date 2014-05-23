@@ -19,3 +19,6 @@ body {
 .admin_bar .fixed-nav-top {
   margin-top: 30px;
 }
+.current-menu-item > a {
+  background-color: #000;
+}
