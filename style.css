@@ -16,9 +16,51 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.admin_bar .fixed-nav-top {
-  margin-top: 30px;
+
+.admin-bar .navbar-fixed-top {
+	margin-top: 30px;
 }
-.current-menu-item > a {
-  background-color: #000;
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
 }
