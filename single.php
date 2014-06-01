@@ -9,9 +9,17 @@
 
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
+            <p>
+              By <?php the_author(); ?> 
+              on <?php echo the_time('l, F jS, Y');?>
+              in <?php the_category( ', ' ); ?>.
+              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+            </p>
           </div>
 
           <?php the_content(); ?>
+          
+          <hr>
 
         <?php endwhile; else: ?>
           
@@ -26,7 +34,7 @@
 
       </div>
       
-      <?php get_sidebar(); ?>
+      <?php get_sidebar( 'blog' ); ?>
 
     </div>
 
