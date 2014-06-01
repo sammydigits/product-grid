@@ -64,3 +64,27 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
+
+.sidebar { 
+	margin-top: 40px;
+	color: #444;
+}
+
+.sidebar h3 {
+	color: #888;
+}
+
+.widget {
+	margin: 10px 0 30px;
+}
+
+article.post {
+	margin: 20px 0 40px;
+}
+
+
+
+
+
+
+
