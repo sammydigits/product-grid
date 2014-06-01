@@ -21,9 +21,9 @@
               <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
             </p>
 
-            <hr>
-
             <?php the_excerpt(); ?>
+            
+            <hr>
 
           </article>
 
