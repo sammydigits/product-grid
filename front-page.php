@@ -1,27 +1,48 @@
 <?php get_header(); ?>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
+  <div class="container">   
+    <div class="row">
       
-        <?php if ( have_posts() ) : while( have_posts()  ) : the_post(); ?>
-          <?php the_content(); ?>
-        <?php endwhile; endif; ?>
-        
+      <div class="col-md-9">
+
+        <div class="page-header">
+          <h1><?php wp_title(''); ?></h1>
+        </div>
+
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <article class="post">
+            
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <p>
+              By <?php the_author(); ?> 
+              on <?php echo the_time('l, F jS, Y');?>
+              in <?php the_category( ', ' ); ?>.
+              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+            </p>
+
+            <hr>
+
+            <?php the_excerpt(); ?>
+
+          </article>
+
+         
+        <?php endwhile; else: ?>
+          
+          <div class="page-header">
+            <h1>Oh no!</h1>
+          </div>
+
+          <p>No content is appearing for this page!</p>
+
+        <?php endif; ?>
+
+
       </div>
+      
+      <?php get_sidebar( 'blog' ); ?>
+
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <?php if ( dynamic_sidebar('front-left'));?>
-        </div>
-        <div class="col-md-4">
-          <?php if ( dynamic_sidebar('front-center'));?>
-       </div>
-        <div class="col-md-4">
-          <?php if ( dynamic_sidebar('front-right'));?>
-        </div>
-      </div>
 <?php get_footer(); ?>
