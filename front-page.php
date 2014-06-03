@@ -3,7 +3,11 @@
 <div class="container">
   <div class="row">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+  //Set the initial count outside of the loop.
+	$count = (int)0;
+	//Start the post loop
+  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
       <div class="col-md-4">
 
@@ -19,8 +23,8 @@
         <?php the_excerpt(); ?>
       </div>
 
-      <?php $post_count = $the_query->current_post + 1; ?>
-      <?php if ( $post_count % 4 == 0): ?>
+      <?php $count++; ?>
+      <?php if ( $count % 4 == 0): ?>
 
       </div><div class="row">
 
