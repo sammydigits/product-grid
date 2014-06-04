@@ -24,9 +24,11 @@
       </div>
 
       <?php $count++; ?>
-      <?php if ( $count % 4 == 0): ?>
+      <?php if ( $count % 3 == 0): ?>
 
       </div><div class="row">
+      
+      <?php endif; ?>
 
 <?php endwhile; else: ?>
   
