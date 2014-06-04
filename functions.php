@@ -1,5 +1,13 @@
 <?php
-
+// jetpack post-by-email bug fix
+//https://gist.github.com/samteeeee/c5b28281fe9af04b50c9
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'the_content', 'remove_width_attribute', 10 );
+ 
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
 
 function theme_styles() {
 
