@@ -16,9 +16,9 @@
             </p>
           </div>
 
-          <?php the_content(); ?>
-          
-          <hr>
+          <div class="entry-content">
+            <?php the_content(); ?>
+          </div>
 
         <?php endwhile; else: ?>
           
