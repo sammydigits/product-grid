@@ -13,8 +13,9 @@ This theme, like WordPress, is licensed under the GPL.
 */
 
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+	background-color: #eaeaea;
+  	padding-top: 50px;
+  	padding-bottom: 20px;
 }
 
 .admin-bar .navbar-fixed-top {
@@ -63,6 +64,18 @@ body {
 .current-menu-parent .current-menu-item a {
 	color: #fff;
 	font-weight: bold;
+}
+.col-md-4 {
+	margin-top: 10px;
+}
+.col-md-4 .contents {
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+}
+.product-name {
+	background-color: #f7f7f7;
+	border-top: 1px solid #dbdbdb;
+	padding: 10px;
 }
 
 .sidebar { 
