@@ -10,31 +10,30 @@
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
       <div class="col-md-4">
-      
-      	<?php if ( has_post_thumbnail()) : ?>
-          <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-          <?php the_post_thumbnail('medium'); ?>
-        </a>
-        <?php endif; ?>
 
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <p>
-          By <?php the_author(); ?> 
-          on <?php echo the_time('l, F jS, Y');?>
-          in <?php the_category( ', ' ); ?>.
-        </p>
-  
-        <hr>
-  
-        <?php the_excerpt(); ?>
+        <div class="contents">
+
+          <?php if ( has_post_thumbnail()) : ?>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+            <?php the_post_thumbnail('medium'); ?>
+          </a>
+          <?php endif; ?>
+
+          <div class="product-name">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <p><?php the_category( ', ' ); ?></p>
+          </div>
+
+        </div>
+    
       </div>
 
       <?php $count++; ?>
       <?php if ( $count % 3 == 0): ?>
 
       </div><div class="row">
-      
-      <?php endif; ?>
+
+    <?php endif; ?>
 
 <?php endwhile; else: ?>
   
