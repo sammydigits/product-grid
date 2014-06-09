@@ -32,6 +32,9 @@
       <?php if ( $count % 3 == 0): ?>
 
       </div><div class="row">
+      
+	<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+	<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
     <?php endif; ?>
 
