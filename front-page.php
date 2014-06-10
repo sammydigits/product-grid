@@ -32,9 +32,6 @@
       <?php if ( $count % 3 == 0): ?>
 
       </div><div class="row">
-      
-	<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-	<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
     <?php endif; ?>
 
@@ -46,9 +43,14 @@
 
   <p>No posts found.</p>
 
-<?php endif; ?>       
+<?php endif; ?>  
 
   </div>
+
+<ul class="pager">
+  <li class="previous"><?php next_posts_link( '&larr; Older' ); ?></li>
+  <li class="next"><?php previous_posts_link( 'Newer &rarr;' ); ?></li>
+</ul>
 </div>
 
 <?php get_footer(); ?>
