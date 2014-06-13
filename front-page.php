@@ -9,7 +9,7 @@
 	//Start the post loop
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <div class="col-md-4">
+      <div class="col-sm-3">
 
         <div class="contents">
 
@@ -29,7 +29,7 @@
       </div>
 
       <?php $count++; ?>
-      <?php if ( $count % 3 == 0): ?>
+      <?php if ( $count % 4 == 0): ?>
 
       </div><div class="row">
 
