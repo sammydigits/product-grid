@@ -7,9 +7,10 @@ Wordpress theme for displaying posts in a responsive grid using Bootstrap.
 
 Features:
 
+* Fast, lightweight, minimal
 * Responsive grid
 * Comments removed
-* Author name removed
+* Author details removed
 
 Design based on: https://dribbble.com/shots/986548-Product-Catalog?list=searches&tag=product_grid&offset=1
 
