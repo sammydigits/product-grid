@@ -65,10 +65,10 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
-.col-md-4 {
+.col-sm-3 {
 	margin-top: 10px;
 }
-.col-md-4 .contents {
+.col-sm-3 .contents {
 	background-color: #fff;
 	border: 1px solid #dbdbdb;
 }
@@ -77,7 +77,14 @@ body {
 	border-top: 1px solid #dbdbdb;
 	padding: 10px;
 }
-
+.product-name h3 {
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.product-name h3 a {
+	color: #000;
+}
 .sidebar { 
 	margin-top: 40px;
 	color: #444;
