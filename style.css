@@ -78,7 +78,8 @@ body {
 	padding: 10px;
 }
 .product-name h3 {
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 5px;
 }
