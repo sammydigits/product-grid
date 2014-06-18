@@ -86,6 +86,12 @@ body {
 .product-name h3 a {
 	color: #000;
 }
+.product-name p {
+	margin: 0;
+}
+.product-name p a {
+	color: #ccc;
+}
 .sidebar { 
 	margin-top: 40px;
 	color: #444;
