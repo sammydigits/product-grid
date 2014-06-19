@@ -21,7 +21,8 @@
 
           <div class="product-name">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p><?php the_category( ', ' ); ?></p>
+            <p class="category"><?php the_category( ', ' ); ?></p>
+            <p class="likes"><?php echo rand(5, 99); ?></p>
           </div>
 
         </div>
