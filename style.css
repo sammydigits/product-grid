@@ -74,6 +74,9 @@ body {
 	background-color: #fff;
 	border: 1px solid #dbdbdb;
 }
+.col-sm-3 .contents:hover {
+	box-shadow: 1px 1px 10px 2px #ccc;	
+}
 .product-name {
 	background-color: #f7f7f7;
 	border-top: 1px solid #dbdbdb;
