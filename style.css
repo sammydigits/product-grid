@@ -70,6 +70,7 @@ body {
 	margin-top: 10px;
 }
 .col-sm-3 .contents {
+	overflow: hidden;
 	background-color: #fff;
 	border: 1px solid #dbdbdb;
 }
