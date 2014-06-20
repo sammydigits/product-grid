@@ -11,6 +11,8 @@ Features:
 * Responsive grid
 * Comments removed
 * Author details removed
+* Perfect for affiliate sites
+* Live demo: http://sourcefootwear.co.uk/
 
 Design based on: https://dribbble.com/shots/986548-Product-Catalog?list=searches&tag=product_grid&offset=1
 
