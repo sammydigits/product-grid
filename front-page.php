@@ -14,15 +14,15 @@
         <div class="contents">
 
           <?php if ( has_post_thumbnail()) : ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-            <?php the_post_thumbnail('medium'); ?>
-          </a>
+            <div class="product-image">
+            	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail('medium'); ?></a>
+            </div>
           <?php endif; ?>
 
           <div class="product-name">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="category"><?php the_category( ', ' ); ?></p>
-            <p class="likes"><?php echo rand(5, 99); ?></p>
+            <p class="likes"><?php the_permalink(); ?>"><?php echo rand(5, 99); ?></a></p>
           </div>
 
         </div>
