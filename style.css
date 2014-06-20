@@ -81,6 +81,7 @@ body {
 	overflow: hidden;
 	height: 275px;
 	display: block;
+	text-align: center;
 }
 .product-name {
 	background-color: #f7f7f7;
