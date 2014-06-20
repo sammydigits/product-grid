@@ -77,6 +77,11 @@ body {
 .col-sm-3 .contents:hover {
 	box-shadow: 1px 1px 10px 2px #ccc;	
 }
+.col-sm-3 .contents .product-image {
+	overflow: hidden;
+	height: 275px;
+	display: block;
+}
 .product-name {
 	background-color: #f7f7f7;
 	border-top: 1px solid #dbdbdb;
@@ -105,7 +110,7 @@ body {
 	padding: 6px 0 0 22px;
 	position: absolute;
 	right: 27px;
-	top: 290px;
+	top: 271px;
 	width: 46px;
 	height: 60px;	
 }
