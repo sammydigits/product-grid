@@ -22,7 +22,7 @@
           <div class="product-name">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="category"><?php the_category( ', ' ); ?></p>
-            <p class="likes"><?php the_permalink(); ?>"><?php echo rand(5, 99); ?></a></p>
+            <p class="likes"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php echo rand(5, 99); ?></a></p>
           </div>
 
         </div>
