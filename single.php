@@ -9,10 +9,7 @@
 
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
-            <p>
-              Selected on <?php echo the_time('l, F jS, Y');?>
-              in <?php the_category( ', ' ); ?>.
-            </p>
+            <p>Selected on <?php echo the_time('l, F jS, Y');?>, stored in the <?php the_category( ', ' ); ?> department.</p>
           </div>
 
           <div class="entry-content">
