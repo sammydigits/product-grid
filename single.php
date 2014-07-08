@@ -10,8 +10,7 @@
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
             <p>
-              By <?php the_author(); ?> 
-              on <?php echo the_time('l, F jS, Y');?>
+              Selected on <?php echo the_time('l, F jS, Y');?>
               in <?php the_category( ', ' ); ?>.
             </p>
           </div>
