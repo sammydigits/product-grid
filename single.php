@@ -9,7 +9,7 @@
         
         <div class="row">
 
-          <div class="page-header col-md-4">
+          <div class="page-header col-md-8">
             <h1><?php the_title(); ?></h1>
             <p>Selected on <?php echo the_time('l, F jS, Y');?>, stored in the <?php the_category( ', ' ); ?> department.</p>
             <hr/>
@@ -23,7 +23,7 @@
             </script>            
           </div>
 
-          <div class="entry-content col-md-8">
+          <div class="entry-content col-md-4">
             <?php the_content(); ?>
           </div>
 
