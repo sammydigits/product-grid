@@ -131,6 +131,10 @@ body {
 article.post {
 	margin: 20px 0 40px;
 }
+.page-header {
+	margin-top: 30px;
+	background-color: white;
+}
 
 
 
