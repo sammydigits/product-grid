@@ -12,6 +12,15 @@
           <div class="page-header col-md-4">
             <h1><?php the_title(); ?></h1>
             <p>Selected on <?php echo the_time('l, F jS, Y');?>, stored in the <?php the_category( ', ' ); ?> department.</p>
+            <hr/>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:300px;height:250px"
+                 data-ad-client="ca-pub-0798158529844526"
+                 data-ad-slot="6819608825"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>            
           </div>
 
           <div class="entry-content col-md-8">
