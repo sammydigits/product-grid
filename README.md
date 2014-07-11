@@ -22,3 +22,4 @@ Design based on:
 Dependencies:
 
 * https://wordpress.org/plugins/easy-add-thumbnail/
+* http://www.yarpp.com/ (Yet Another Related Posts Plugin)
